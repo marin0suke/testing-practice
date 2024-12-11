@@ -1,4 +1,4 @@
 export function capitalise(string) {
-    return "Hello";
+    return string.charAt(0).toUpperCase() + string.slice(1);
 };
 
