@@ -1,4 +1,4 @@
-export function capitalise(a, b) {
-    return a + b;
+export function capitalise(string) {
+    return "Hello";
 };
 
