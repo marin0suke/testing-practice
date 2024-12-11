@@ -12,10 +12,10 @@ test('empty string returns an empty string', () => {
     expect(capitalise("")).toBe("");
 })
 
-test('capitalised string will return capitalised string', () => {
+test('does not change a string that is already capitalised', () => {
     expect(capitalise("Worm")).toBe("Worm");
 })
 
-test('single char will be capitalised', () => {
+test('capitalises single character', () => {
     expect(capitalise("c")).toBe("C");
 })
