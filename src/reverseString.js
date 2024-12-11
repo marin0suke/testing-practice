@@ -1,3 +1,3 @@
-export function reverseString() {
-    return "olleH";
+export function reverseString(string) {
+    return string.split("").reverse().join("");
 }
