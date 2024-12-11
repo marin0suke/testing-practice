@@ -19,3 +19,7 @@ test('does not change a string that is already capitalised', () => {
 test('capitalises single character', () => {
     expect(capitalise("c")).toBe("C");
 })
+
+test('capitalises strings with spaces in front', () => {
+    expect(capitalise(" headband")).toBe(" Headband");
+})
