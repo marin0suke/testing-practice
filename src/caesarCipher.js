@@ -1,29 +1,29 @@
-export function caesarCipher(string, shift) {
-    const alphabet = "abcdefghijklmnopqrstuvwxyz"; 
-    let codedStr = "";
+// export function caesarCipher(string, shift) {
+//     const alphabet = "abcdefghijklmnopqrstuvwxyz"; 
+//     let codedStr = "";
 
-    string.split("").forEach(char => {
-            if (alphabet.includes(char.toLowerCase())) {
-                const isUpperCase = char === char.toUpperCase(); // checks if current char is uppercase.
-                const i = alphabet.indexOf(char.toLowerCase()); // get index of char within alphabet.
-                const shifted = alphabet[(i + shift + alphabet.length) % alphabet.length]; // shift the char to coded.
+//     string.split("").forEach(char => {
+//             if (alphabet.includes(char.toLowerCase())) {
+//                 const isUpperCase = char === char.toUpperCase(); // checks if current char is uppercase.
+//                 const i = alphabet.indexOf(char.toLowerCase()); // get index of char within alphabet.
+//                 const shifted = alphabet[(i + shift + alphabet.length) % alphabet.length]; // shift the char to coded.
 
-                codedStr += isUpperCase ? shifted.toUpperCase() : shifted; // add to return value depending on casing.
+//                 codedStr += isUpperCase ? shifted.toUpperCase() : shifted; // add to return value depending on casing.
 
-            } else {
-                codedStr += char;
-            }
-    });
+//             } else {
+//                 codedStr += char;
+//             }
+//     });
     
 
-    console.log(codedStr);
-    return codedStr;
-}
+//     console.log(codedStr);
+//     return codedStr;
+// }
 
 
 //single responsibility coded
 
-function caesarCipher(string, shift) {
+export function caesarCipher(string, shift) {
     const alphabet = "abcdefghijklmnopqrstuvwxyz"; // this is specific to caesar.
     let codedStr = ""; // string is specific to this prob. might be array/obj in other cases.
 
